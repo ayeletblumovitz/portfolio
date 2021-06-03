@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom'; 
+// import { BrowserRouter, Route, Link } from 'react-router-dom'; 
+import { Route, Link } from 'react-router-dom'; 
+import { HashRouter as BrowserRouter } from 'react-router-dom';
 import Home from './Home.js'; 
 import About from './About.js'; 
 import Resume from './Resume.js';
