@@ -115,19 +115,20 @@ body {
   margin-left: 15px;
 }
 .mytooltip .mytext {
-  width: 60px;
+  width: 75px;
   background-color: #CB977C;
   color: white;
   z-index: 1;
-  top: -30px;
-  left: -3px;
+  top: -35px;
+  left: -11px;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   visibility: hidden;
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .mytooltip {
   position: relative;
