@@ -33,7 +33,9 @@ class App extends React.Component {
     });}
   }
   showTip(ev) {
-    const tip = ev.target.querySelector(".mytooltip");
+    const tip = ev.currentTarget.querySelector(".mytooltip");
+    console.log(tip);
+    tip.style.display = "inline-block";
   }
 
   render () {
@@ -58,24 +60,24 @@ class App extends React.Component {
             <footer className="contact">
               <div className="icons">
               <p id="sec1">CONTACT ME</p>
+              <div class = "mytooltip">
                 <a href='mailto:ablumovitz@tulane.edu' target="_blank"> 
                 <img src={emaillogo}></img>
-                <div class = "mytooltip">
-                  <span class = "mytext">EMAIL</span>
-                </div>
                 </a>
-                <a href='https://www.linkedin.com/in/ayeletblumovitz/' target="_blank" onMouseOver={this.showTip}> 
+                <span class = "mytext">EMAIL</span>
+              </div>
+              <div class = "mytooltip">
+                <a href='https://www.linkedin.com/in/ayeletblumovitz/' target="_blank"> 
                 <img src={linkedinlogo}></img>
-                <div class = "mytooltip">
-                  <span class = "mytext">LINKEDIN</span>
-                </div>
                 </a>
-                <a href="https://google.com" target="_blank"> 
+                <span class = "mytext">LINKEDIN</span>
+              </div>
+              <div class = "mytooltip">
+                <a href="https://www.pinterest.com/ayeletblumovitz/" target="_blank"> 
                 <img src={pinterestlogo}></img>
-                <div class = "mytooltip">
-                  <span class = "mytext">PINTEREST</span>
-                </div>
                 </a>
+                <span class = "mytext">PINTEREST</span>
+              </div>
               </div>
             </footer>
           </div>
