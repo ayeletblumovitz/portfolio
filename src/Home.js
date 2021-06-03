@@ -7,6 +7,7 @@
   import cubeproject from './menupics/cubeproject-small.jpg'
   import pedestalproject from './menupics/pedestalproject-small.png'
   import infodesign from './menupics/infodesign-small.png'
+  import sketchdesign from './menupics/sketchdesign-small.png'
   // import { BrowserRouter, Route, Link } from 'react-router-dom'; 
   import { Route, Link } from 'react-router-dom'; 
   import { HashRouter as BrowserRouter } from 'react-router-dom';
@@ -18,6 +19,7 @@
   import ToolDesign from './ToolDesign.js';
   import CubeProject from './CubeProject.js';
   import PedestalProject from './PedestalProject.js';
+  import SketchDesign from './SketchDesign.js';
   
   class Home extends React.Component {  
     constructor(props) {
@@ -73,6 +75,10 @@
                   <Link className="img_description" mode="infodesign" onClick={this.updateState}>INFOGRAPHIC DESIGN</Link>
                   <img src={infodesign} alt="infodesign" />
                 </div>
+                <div className ="sketchdesign" >
+                  <Link className="img_description" mode="sketchdesign" onClick={this.updateState}>SKETCH DESIGN</Link>
+                  <img src={sketchdesign} alt="sketchdesign" />
+                </div>
               </div>  
           }
           {this.state.mode === "photography" && 
@@ -98,6 +104,9 @@
           }
           {this.state.mode === "cubeproject" && 
           <CubeProject backFunc={this.returnToMain}/>
+          }
+          {this.state.mode === "sketchdesign" && 
+          <SketchDesign backFunc={this.returnToMain}/>
           }
       </div>
         

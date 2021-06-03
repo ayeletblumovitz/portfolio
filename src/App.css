@@ -264,18 +264,18 @@ body {
   cursor: pointer;
   pointer-events: auto;
 }
-.photography img, .productdesign img, .spacialdesign img, .graphicdesign img, .cubeproject img, .tooldesign img, .pedestalproject img, .infodesign img {
+.photography img, .productdesign img, .spacialdesign img, .graphicdesign img, .cubeproject img, .tooldesign img, .pedestalproject img, .infodesign img, .sketchdesign img{
   max-width: 100%;
   max-height: 90%;
   opacity: 0.8;
   z-index: 0;
   box-shadow: 2px 2px 5px 0px;
 }
-.photography:hover img, .productdesign:hover img, .spacialdesign:hover img, .graphicdesign:hover img, .cubeproject:hover img, .tooldesign:hover img, .pedestalproject:hover img, .infodesign:hover img{
+.photography:hover img, .productdesign:hover img, .spacialdesign:hover img, .graphicdesign:hover img, .cubeproject:hover img, .tooldesign:hover img, .pedestalproject:hover img, .infodesign:hover img, .sketchdesign:hover img{
   transition: all 0.5s ease;
   opacity: 0.15;
 }
-.photography:hover .img_description, .productdesign:hover .img_description, .spacialdesign:hover .img_description, .graphicdesign:hover .img_description, .cubeproject:hover .img_description, .tooldesign:hover .img_description, .pedestalproject:hover .img_description, .infodesign:hover .img_description{
+.photography:hover .img_description, .productdesign:hover .img_description, .spacialdesign:hover .img_description, .graphicdesign:hover .img_description, .cubeproject:hover .img_description, .tooldesign:hover .img_description, .pedestalproject:hover .img_description, .infodesign:hover .img_description, .sketchdesign:hover .img_description{
   transition: all 0.5s ease;
   opacity: 1;
 }
@@ -328,7 +328,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.sketchdesign {
+  grid-area: midmiddle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*---------> INFOGRAPHIC <---------*/
 
 #infographic {
