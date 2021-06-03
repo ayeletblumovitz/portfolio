@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9fdc062b.chunk.css",
-    "main.js": "/portfolio/static/js/main.f53eccee.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f53eccee.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.be8e1447.chunk.css",
+    "main.js": "/portfolio/static/js/main.6fe9e3f5.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6fe9e3f5.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d3993df8.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d3993df8.js.map",
     "static/js/2.ec39cc69.chunk.js": "/portfolio/static/js/2.ec39cc69.chunk.js",
@@ -10,8 +10,21 @@
     "static/js/3.52123fa2.chunk.js": "/portfolio/static/js/3.52123fa2.chunk.js",
     "static/js/3.52123fa2.chunk.js.map": "/portfolio/static/js/3.52123fa2.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.9fdc062b.chunk.css.map": "/portfolio/static/css/main.9fdc062b.chunk.css.map",
+    "static/css/main.be8e1447.chunk.css.map": "/portfolio/static/css/main.be8e1447.chunk.css.map",
     "static/js/2.ec39cc69.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ec39cc69.chunk.js.LICENSE.txt",
+    "static/media/Sketchbook1.9e14367c.jpeg": "/portfolio/static/media/Sketchbook1.9e14367c.jpeg",
+    "static/media/Sketchbook10.ce86dd83.jpeg": "/portfolio/static/media/Sketchbook10.ce86dd83.jpeg",
+    "static/media/Sketchbook11.9074f184.jpeg": "/portfolio/static/media/Sketchbook11.9074f184.jpeg",
+    "static/media/Sketchbook12.ef8fe10d.jpeg": "/portfolio/static/media/Sketchbook12.ef8fe10d.jpeg",
+    "static/media/Sketchbook13.529b267d.jpeg": "/portfolio/static/media/Sketchbook13.529b267d.jpeg",
+    "static/media/Sketchbook2.ab1a4bb3.jpeg": "/portfolio/static/media/Sketchbook2.ab1a4bb3.jpeg",
+    "static/media/Sketchbook3.3f9fca68.jpeg": "/portfolio/static/media/Sketchbook3.3f9fca68.jpeg",
+    "static/media/Sketchbook4.e22e3d55.jpeg": "/portfolio/static/media/Sketchbook4.e22e3d55.jpeg",
+    "static/media/Sketchbook5.457b22d8.jpeg": "/portfolio/static/media/Sketchbook5.457b22d8.jpeg",
+    "static/media/Sketchbook6.8891b09c.jpeg": "/portfolio/static/media/Sketchbook6.8891b09c.jpeg",
+    "static/media/Sketchbook7.cd3d263d.jpeg": "/portfolio/static/media/Sketchbook7.cd3d263d.jpeg",
+    "static/media/Sketchbook8.3784cf6d.jpeg": "/portfolio/static/media/Sketchbook8.3784cf6d.jpeg",
+    "static/media/Sketchbook9.97ce7a60.jpeg": "/portfolio/static/media/Sketchbook9.97ce7a60.jpeg",
     "static/media/aboutPic.eb6884e8.png": "/portfolio/static/media/aboutPic.eb6884e8.png",
     "static/media/cubeproject-small.b4729487.jpg": "/portfolio/static/media/cubeproject-small.b4729487.jpg",
     "static/media/download-icon.23014023.svg": "/portfolio/static/media/download-icon.23014023.svg",
@@ -44,13 +57,14 @@
     "static/media/photography-small.6487718a.jpg": "/portfolio/static/media/photography-small.6487718a.jpg",
     "static/media/pinterest-icon.d6071a24.svg": "/portfolio/static/media/pinterest-icon.d6071a24.svg",
     "static/media/productdesign-small.65907fce.jpg": "/portfolio/static/media/productdesign-small.65907fce.jpg",
+    "static/media/sketchdesign-small.69eb4291.png": "/portfolio/static/media/sketchdesign-small.69eb4291.png",
     "static/media/spacialdesign-small.c67d3041.png": "/portfolio/static/media/spacialdesign-small.c67d3041.png",
     "static/media/tooldesign-small.f8efaffb.png": "/portfolio/static/media/tooldesign-small.f8efaffb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d3993df8.js",
     "static/js/2.ec39cc69.chunk.js",
-    "static/css/main.9fdc062b.chunk.css",
-    "static/js/main.f53eccee.chunk.js"
+    "static/css/main.be8e1447.chunk.css",
+    "static/js/main.6fe9e3f5.chunk.js"
   ]
 }
