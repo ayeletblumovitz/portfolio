@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import { BrowserRouter, Route, Link } from 'react-router-dom'; 
 import Home from './Home.js'; 
-import Contact from './Contact.js'; 
 import About from './About.js'; 
 import Resume from './Resume.js';
 import './App.css';
-import emaillogo from './email-icon.png'
-import linkedinlogo from './linkedin-icon.png'
-import pinterestlogo from './pinterest-icon.png'
+import emaillogo from './email-icon.svg'
+import linkedinlogo from './linkedin-icon.svg'
+import pinterestlogo from './pinterest-icon.svg'
 
 class App extends React.Component {  
   constructor(props) {
       super(props);
       this.state = {
-          
+        scroll: "up"
       }
-      this.goToContact = this.goToContact.bind(this);
+      this.updateScroll = this.updateScroll.bind(this);
   }
-  goToContact() {
-    window.scrollTo(1000, 1000)
+  updateScroll(ev) {
+    const direc = ev.target.getAttribute("mode");
+    console.log(direc);
+    if (direc == "up") {window.scroll({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth'
+    });}
+    else {window.scroll({
+      top: 9999, 
+      left: 0, 
+      behavior: 'smooth'
+    });}
   }
 
   render () {
@@ -28,46 +37,42 @@ class App extends React.Component {
         <div className="App">
           <div className="navigation">
           <div className="upperName">
-          <Link to="/" className="logo" id="Name">Ayelet Blumovitz</Link>
+          <Link to="/" className="logo" id="Name" mode="up" onClick={this.updateScroll}>Ayelet Blumovitz</Link>
           </div>
           <div className="NavButtons">
-            <Link to="/" className="item">HOME</Link>
+            <Link to="/" className="item" mode="up" onClick={this.updateScroll}>HOME</Link>
             <Link to="/Resume" className="item">RESUME</Link>
             <Link to="/About" className="item">ABOUT</Link>
-            <Link className="item" onClick={this.goToContact} >CONTACT</Link>
+            <Link className="item" mode="down" onClick={this.updateScroll} >CONTACT</Link>
           </div>
           </div>
           <div className="main">
             <Route exact path="/" component={Home} />
             <Route path="/Resume" component={Resume} />
             <Route path="/About" component={About}/>
-            <div className="contact">
+            <footer className="contact">
               <div className="icons">
-              <p id="sec1">CONTACT</p>
-              <section id="sec2">
+              <p id="sec1">CONTACT ME</p>
+                <a href='mailto:ablumovitz@tulane.edu' target="_blank"> 
                 <img src={emaillogo}></img>
-                <p>LinkedIn: https://www.linkedin.com/in/ayeletblumovitz/</p>
-              </section>
-              <section id="sec3">
+                <div class = "mytooltip">
+                  <span class = "mytext">EMAIL</span>
+                </div>
+                </a>
+                <a href='https://www.linkedin.com/in/ayeletblumovitz/' target="_blank"> 
                 <img src={linkedinlogo}></img>
-                <p>Email: ayelet.blumovitz@gmail.com</p>
-              </section>
-              <section id="sec4">
+                <div class = "mytooltip">
+                  <span class = "mytext">LINKEDIN</span>
+                </div>
+                </a>
+                <a href="https://google.com" target="_blank"> 
                 <img src={pinterestlogo}></img>
-                <p>LinkedIn: https://www.linkedin.com/in/ayeletblumovitz/</p>
-              </section>
+                <div class = "mytooltip">
+                  <span class = "mytext">PINTEREST</span>
+                </div>
+                </a>
               </div>
-              <div className="contactForm">
-              <p>SEND ME A MESSAGE</p>
-              <div className="formInputs">
-              <input type="text" className="form" value="Name" /> 
-              {/* onChange={this.onNameChange.bind(this)} */}
-              <input type="text" className="form" value="Email" /> 
-              <input type="text" className="form" value="Subject" /> 
-              <input type="text" className="form" value="Message" /> 
-              </div>
-              </div>
-            </div>
+            </footer>
           </div>
         </div>
       </BrowserRouter>

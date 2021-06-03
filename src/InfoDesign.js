@@ -7,11 +7,12 @@ class InfoDesign extends React.Component {
     window.scrollTo(0, 0)
     return (
         <div className="infoDesignDetails">
+        <div className="backButton">
             <i className="backToMain" id="arrow" onClick={this.props.backFunc}></i>
-          {/* <button className="backToMain" onClick={this.props.backFunc}>BACK</button> */}
-          <div>
-            <img id="infographic" src={content}></img>
+            <p onClick={this.props.backFunc}>Back</p>
           </div>
+        <img id="infographic" src={content}></img>
+        
         </div>
         
       );

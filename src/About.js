@@ -4,17 +4,17 @@ import pic from "./aboutPic.png";
 class About extends React.Component {  
 
   render () {
-    // this.props.getPageFunction("about");
+    window.scrollTo(0, 0)
     return (
       <div className="About">
         <div className="MainAbout">
           <div className="AboutText">
-            <h2 id="AboutMe">ABOUT ME</h2>
+            <h2 id="AboutMe">About Me</h2>
           <p id="AboutMeContent">
           Ayelet Blumovitz is a third-year Design student, crafter, painter, and Pinterest enthusiast. She is studying in the Tulane school of Architecture, with interests in design that range from graphic to interior to product design. With an architecture concentration and music minor, Ayelet hopes to connect her design knowledge to her music education and continue to explore the many different outlets design thinking can reach.          </p>
           </div>
           <div className="AboutPic">
-            <img src={pic}></img>
+            <img src={pic} alt="Ayelet"></img>
           </div>
           </div>
       </div>

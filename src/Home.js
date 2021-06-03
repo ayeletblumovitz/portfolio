@@ -4,7 +4,7 @@
   import spacialdesign from './spacialdesign.png'
   import graphicdesign from './graphicdesign.jpg'
   import tooldesign from './tooldesign.png'
-  import cubeproject from './cubeproject.png'
+  import cubeproject from './cubeproject.jpg'
   import pedestalproject from './pedestalproject.png'
   import infodesign from './infodesign.png'
   import { BrowserRouter, Route, Link } from 'react-router-dom'; 
@@ -13,6 +13,9 @@
   import SpacialDesign from './SpacialDesign.js';
   import ProductDesign from './ProductDesign.js';
   import InfoDesign from './InfoDesign.js';
+  import ToolDesign from './ToolDesign.js';
+  import CubeProject from './CubeProject.js';
+  import PedestalProject from './PedestalProject.js';
   
   class Home extends React.Component {  
     constructor(props) {
@@ -31,6 +34,7 @@
       this.setState({mode: "main"});
     }
     render () {
+      window.scrollTo(0, 0)
       return (
         <div>
           {this.state.mode === "main" &&
@@ -83,6 +87,15 @@
           }
           {this.state.mode === "infodesign" && 
           <InfoDesign backFunc={this.returnToMain}/>
+          }
+          {this.state.mode === "tooldesign" && 
+          <ToolDesign backFunc={this.returnToMain}/>
+          }
+          {this.state.mode === "pedestalproject" && 
+          <PedestalProject backFunc={this.returnToMain}/>
+          }
+          {this.state.mode === "cubeproject" && 
+          <CubeProject backFunc={this.returnToMain}/>
           }
       </div>
         

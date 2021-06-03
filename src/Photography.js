@@ -10,9 +10,13 @@ import p7 from './photographypics/photo7.jpeg';
 class Photography extends React.Component {  
     
     render () {
+      window.scrollTo(0, 0)
       return (
         <div className="picDetails">
-          <button className="backToMain" onClick={this.props.backFunc}>Back</button>
+          <div className="backButton">
+            <i className="backToMain" id="arrow" onClick={this.props.backFunc}></i>
+            <p onClick={this.props.backFunc}>Back</p>
+          </div>
           <div>
           <img src={p1}></img>
           <img src={p2}></img>
