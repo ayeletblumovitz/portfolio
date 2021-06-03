@@ -1,12 +1,12 @@
   import React from "react";
-  import photographypic from './photography.jpg'
-  import productdesign from './productdesign.jpg'
-  import spacialdesign from './spacialdesign.png'
-  import graphicdesign from './graphicdesign.jpg'
-  import tooldesign from './tooldesign.png'
-  import cubeproject from './cubeproject.jpg'
-  import pedestalproject from './pedestalproject.png'
-  import infodesign from './infodesign.png'
+  import photographypic from './menupics/photography-small.jpg'
+  import productdesign from './menupics/productdesign-small.jpg'
+  import spacialdesign from './menupics/spacialdesign-small.png'
+  import graphicdesign from './menupics/graphicdesign-small.jpg'
+  import tooldesign from './menupics/tooldesign-small.png'
+  import cubeproject from './menupics/cubeproject-small.jpg'
+  import pedestalproject from './menupics/pedestalproject-small.png'
+  import infodesign from './menupics/infodesign-small.png'
   // import { BrowserRouter, Route, Link } from 'react-router-dom'; 
   import { Route, Link } from 'react-router-dom'; 
   import { HashRouter as BrowserRouter } from 'react-router-dom';

@@ -32,6 +32,9 @@ class App extends React.Component {
       behavior: 'smooth'
     });}
   }
+  showTip(ev) {
+    const tip = ev.target.querySelector(".mytooltip");
+  }
 
   render () {
     return (
@@ -61,7 +64,7 @@ class App extends React.Component {
                   <span class = "mytext">EMAIL</span>
                 </div>
                 </a>
-                <a href='https://www.linkedin.com/in/ayeletblumovitz/' target="_blank"> 
+                <a href='https://www.linkedin.com/in/ayeletblumovitz/' target="_blank" onMouseOver={this.showTip}> 
                 <img src={linkedinlogo}></img>
                 <div class = "mytooltip">
                   <span class = "mytext">LINKEDIN</span>

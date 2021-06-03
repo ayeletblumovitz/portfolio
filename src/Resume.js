@@ -1,5 +1,5 @@
 import React from "react";
-import download from './download-icon.png';
+import download from './download-icon.svg';
 
 class Resume extends React.Component {  
 
