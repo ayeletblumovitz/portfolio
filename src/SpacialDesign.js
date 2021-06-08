@@ -7,6 +7,7 @@ import p5 from './archpics/photo5.png';
 import p6 from './archpics/photo6.png';
 import p7 from './archpics/photo7.png';
 import p8 from './archpics/photo8.png';
+import p9 from './archpics/photo9.png';
 
 class SpacialDesign extends React.Component {  
     
@@ -18,7 +19,7 @@ class SpacialDesign extends React.Component {
             <i className="backToMain" id="arrow" onClick={this.props.backFunc}></i>
             <p onClick={this.props.backFunc}>Back</p>
           </div>
-          <div>
+          <div className="images">
             <img src={p1}></img>
             <img src={p2}></img>
             <img src={p3}></img>
@@ -27,6 +28,7 @@ class SpacialDesign extends React.Component {
             <img src={p6}></img>
             <img src={p7}></img>
             <img src={p8}></img>
+            <img src={p9}></img>
           </div>
         </div>
       );

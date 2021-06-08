@@ -17,7 +17,7 @@ class Photography extends React.Component {
             <i className="backToMain" id="arrow" onClick={this.props.backFunc}></i>
             <p onClick={this.props.backFunc}>Back</p>
           </div>
-          <div>
+          <div className="images">
           <img src={p1}></img>
           <img src={p2}></img>
           <img src={p3}></img>

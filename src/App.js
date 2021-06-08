@@ -14,11 +14,14 @@ class App extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
-        scroll: "up"
+        scroll: "up",
+        main: false
       }
       this.updateScroll = this.updateScroll.bind(this);
   }
   updateScroll(ev) {
+    this.setState({main: true});
+    console.log(this.state.main);
     const direc = ev.target.getAttribute("mode");
     console.log(direc);
     if (direc == "up") {window.scroll({
@@ -32,6 +35,7 @@ class App extends React.Component {
       behavior: 'smooth'
     });}
   }
+  
   showTip(ev) {
     const tip = ev.currentTarget.querySelector(".mytooltip");
     console.log(tip);

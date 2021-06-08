@@ -9,7 +9,8 @@ class Resume extends React.Component {
             fontStyle: 'italic',
         };
         const bold = {
-            fontWeight: 600,
+            fontWeight: 400,
+            fontSize: 22,
         };
         return (
         <div className="Resume">
@@ -23,13 +24,13 @@ class Resume extends React.Component {
 
             <div className = "resumeLeft">
             <div className = "Contact">
-            <h3 >Contact</h3>
+            <h3 >CONTACT</h3>
             <p>E-mail: ablumovitz@tulane.edu</p>
             <p>LinkedIn: https://www.linkedin.com/in/ayeletblumovitz/</p>
             <p>Phone: 847-420-5422</p>
             </div>
             <div className = "RelevantCoursework">
-            <h3>Relevant Coursework</h3>
+            <h3>RELEVANT COURSEWORK</h3>
             <p>Design and Creative Thinking</p>
             <p>Design and Making Studio</p>
             <p>Design Studio Core II</p>
@@ -40,7 +41,7 @@ class Resume extends React.Component {
             <p>Musicianship Lab</p>
             </div>
             <div className = "Skills">
-            <h3>Skills</h3>
+            <h3>SKILLS</h3>
             <p>Adobe Illustrator</p>
             <p>Adobe InDesign</p>
             <p>Adobe Photoshop</p>
@@ -48,15 +49,13 @@ class Resume extends React.Component {
             <p>Technical Illustration</p>
             </div>
             <div className = "Interests">
-            <h3>Interests</h3>
+            <h3>INTERESTS</h3>
             <p>Journalistic Writing</p>
             <p>Drawing and Painting</p>
             <p>Classical piano and singing</p>
-            <p>Yoga</p>
-            <p>Cooking</p>
             </div>
             <div className = "Languages">
-            <h3>Languages</h3>
+            <h3>LANGUAGES</h3>
             <p>English</p>
             <p>Hebrew</p>
             <p>Italian (beginner)</p>
@@ -65,14 +64,13 @@ class Resume extends React.Component {
 
             <div className = "resumeRight">
             <div className = "Education">
-            <h3>Education</h3>
+            <h3>EDUCATION</h3>
             <p style={bold}>Tulane University Class of 2023</p>
-            <p>Major in Design</p>
-            <p>Concentration in Architecture</p>
+            <p>Major in Design with a Concentration in Architecture</p>
             <p>Minor in Music</p>
             </div>
             <div className = "Experience">
-            <h3>Experience</h3>
+            <h3>EXPERIENCE</h3>
             <p style={bold}>Design Construction Concepts 2020</p>
             <p style={indent}>Summer internship</p>
             <p style={bold}>JUF Lewis Summer Intern Program 2020</p>
@@ -85,7 +83,7 @@ class Resume extends React.Component {
             <p style={indent}>Volunteer in after-school care program - KidCare</p>
             </div>
             <div className = "Involvement">
-            <h3>Involvement</h3>
+            <h3>INVOLVEMENT</h3>
             <p style={bold}>Peer Mentor</p>
             <p style={indent}>Teacher’s assistant for first year seminar class</p>
             <p style={indent}>The Architecture of Place</p>
