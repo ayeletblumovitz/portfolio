@@ -8,6 +8,7 @@
 }
 body {
   background-color: #F9F4F0;
+  scroll-behavior: smooth;
 }
 .main {
   margin-top: 80px;

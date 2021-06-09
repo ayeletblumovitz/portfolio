@@ -38,7 +38,7 @@
       this.setState({mode: "main"});
     }
     render () {
-      window.scrollTo(0, 0)
+      // window.scrollTo(0, 0)
       return (
         <div>
           {this.state.mode === "main" &&
